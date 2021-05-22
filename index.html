@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="cs"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -12,7 +12,6 @@
     <style>
         body {
             height: 98vh;
-                        height: 98vh;
             background-image: url('abstract.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -20,6 +19,7 @@
             font-family: 'Comfortaa', cursive;
             overflow: hidden;
             overflow-x: hidden;
+
         }
 
         .kontejner { display: flex; align-content: center; flex-wrap: wrap; flex-direction: column;}
@@ -128,26 +128,29 @@
                 height: 100px;
                 align-content: center;
             }
-            header {height: 200px; font-size: 1.2em;}
+            header {height: 180px; font-size: 1.2em;}
             .text{ font-size: 1.2em; margin-bottom: 10px;}
             
             main .object .texty .text2{ font-size: 0.8em;}
-            main .object{ margin-top: 100px;}
+            main .object{ margin-top: 50px;}
             .object {position: fixed; overflow-y: scroll;}
-             textarea {height:30px}
-            
-            
+            textarea {height:30px}
+            .omně {align-items: center;}
+            .zivo .text3 {margin-top: 40px;}
+            .texty {margin-right: 20px;}
         }
         @media (max-width: 1000px) {.object .kf {flex-direction: column;}
-         .object .kf3 {width: 100%;}
+         .object .kf3 {width: 100%; }
           .object {padding-bottom: 10px; }
            .text3 {font-size: 0.9em; margin: 40px; margin-top: 10px; margin-bottom: 10px; height: 250px;}
+           .zivo .text3 {margin-top: 40px;}
             .text2 {font-size: 0.8em; margin-bottom: 20px;}
              .object .kf2 {width: 100%;}
              .texty {width: 100%; overflow-y: scroll;}
              .object {position: fixed; overflow-y: scroll; margin-bottom: 20px;}
              .main {overflow: scroll;}
              .jemno {font-size: 1.2em;}
+             
              }
         @media (max-width: 700px) {        input[type=text], textarea, input[type=email] {
   width: 200px;
@@ -160,7 +163,7 @@
   margin-bottom: 16px;
   }
   }
-        @media (max-height:600px) {textarea {height:30px }
+        @media (max-height:600px) {textarea {height:30px} 
         .form-button{margin-bottom: 50px;}
         .object {position: fixed; overflow-y: scroll;}
         }
@@ -175,7 +178,7 @@
             <div class="odkazy">
 
                 <div class="jmeno"> <a> David Bláha </a></div>
-                <div class="o mně">
+                <div class="omně">
                     <button  class="box" id="omne"  onclick="x()" > O mně </button>
                 </div>
                 <div class="životopis">
