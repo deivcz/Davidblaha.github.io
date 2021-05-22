@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="cs"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Bláha - 3KB</title>
+    <title>David Bláha</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c6ca48d23b.js" crossorigin="anonymous"></script>
@@ -53,16 +53,13 @@
             main .object .texty .text2{ font-size: 1.0em;}
             main .object{ margin-top: 100px;}
             footer {width:auto;}
-
+            body {height: 150vh;}
         }
 
         .box {text-decoration: none; color: inherit; cursor: pointer; background-color: #1e272e;
         color:#ffffff ; border: none;
         outline: none;
         font-size: 1.4em;
-        
-        
-        
         }
         .jmeno {color:red; font-size: 1.5em;}
         main{ width: 80%; height: 800px; position: relative;
@@ -79,7 +76,20 @@
             font-size: 1.4em;
             margin-left: 30px;
             transition: 0.75s;
+            margin-top: 5px;;
         }
+        .zivo{display: flex;}
+        .texty {width: 75%;}
+        .text2k {margin-top:5px;}
+        .text3{margin: 40px;
+        color:#ffffff;
+        font-size: 1.6em;     
+        transition: 0.75s;
+        display: grid;
+        height: 420px;
+        width: 70%;
+        }
+        .kf2{height: 100%; width: 30%;}
         .object{
         width: 79%;
         height: 0;  
@@ -92,8 +102,35 @@
         overflow: hidden;
         overflow-x: hidden;
         position: fixed;}
+        .ziv2{text-decoration: none; color: #ffffff;}
+        .kf{display: flex; }
+        .mail, .jmeno{color: #ffffff;}
+        .odeslat {background-color: #ffffff; width: 100px;
+    height: 30px;
+    border-radius: 5px;}
+        .kf3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            outline: none;
+        }
         footer {display: flex; justify-content: flex-end; width: 100%;}
-        
+                .box:hover {color: red;}
+                .box:focus {color: red;}
+                .object.text2::first-letter {text-transform: uppercase; }
+                .ziv2:hover {color:red;}
+                input[type=text], textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.form-button {font-family: 'Comfortaa', cursive; width: 100%; height: 30px; border-radius: 5px;}
     </style>
 </head>
 <body>
@@ -105,13 +142,13 @@
 
                 <div class="jmeno"> <a> David Bláha </a></div>
                 <div class="o mně">
-                    <button  class="box" id="omne" onmouseover="o(this)" onmouseout="ou(this)" onclick="x()" ondblclick="xx()"> O mně </button>
+                    <button  class="box" id="omne"  onclick="x()" > O mně </button>
                 </div>
                 <div class="životopis">
-                    <button  class="box" id="ziv" onmouseover="z(this)" onmouseout="zu(this)" onclick="u()" ondblclick="uu()"> Životopis </button>
+                    <button  class="box" id="ziv"  onclick="u()" > Životopis </button>
                 </div>
                 <div class="Kontakty"> 
-                    <button  class="box" id="kont" onmouseover="k(this)" onmouseout="ku(this)" onclick="y()" ondblclick="yy()"> Kontakty </button>
+                    <button  class="box" id="kont"  onclick="y()" > Kontakty </button>
                 </div>
             </div>
         </header>
@@ -121,26 +158,66 @@
                     <div class="text" id="texto1">
                         O mně
                     </div>
-                    <div class="text2" id="texto2" > Jsem 17ti letý student IT oboru na smíchovské prestižní škole. Zatím nejsem nijak specializovaný, ale rychle a rád se učím. Zajímám se o moderní technologie, politologii a video hry. </div>
+                    <div class="text2" id="texto2" > Jsem 17ti letý student IT oboru. Zajímám se o moderní technologie, politologii a video hry. </div>
                     <div class="text" id="texto1">
-                        O mně
+                        Studium
                     </div>
-                    <div class="text2" id="texto2" > Jsem 17ti letý student IT oboru na smíchovské prestižní škole. Zatím nejsem nijak specializovaný, ale rychle a rád se učím. Zajímám se o moderní technologie, politologii a video hry. </div>
+                    <div class="text2" id="texto2" > Vystudoval jsem základní školu v Rudné u Prahy a momentálně studuji ve druhém ročníku Smíchovské střední průmylové školy a gymnázia. Zatím nejsem nijak spcializovaný, ale zajímám se o robotiku.</div>
                 </div>
         </div>
-        <div class="object" id="zivotopis">    
-            <div class="text">
-                <a href="https://cvapp.cz/r/SAkvVQyIn" class="box"> Odkaz na životopis </a>
+        <div class="object" id="zivotopis">
+           <div class="zivo">     
+            <div class="text3">
+                <div class="ziv"> Jméno: David Bláha</div>
+                <div class="ziv"> Datum narození: 23. 9. 2003</div>
+                <div class="ziv"> Bydliště: Rudná u Prahy, 252 19</div>
+                <div class="ziv"> Vzdělání: Smíchovská střední průmyslová škola a gymnázium</div>
+                <div class="ziv"> Jazyky: Angličtina</div>
+                <a href="https://cvapp.cz/r/SAkvVQyIn" class="ziv2"> Odkaz na celý životopis</a>
             </div>
+
+           </div>
         </div>    
         <div class="object" id="kontakty">
+          <div class="kf">
+           <div class="kf2">
             <div class="text">
                 Kontakty
             </div>
             <div class="text2">
-               <div> Telefoní číslo: +420 777 287 760</div>
-               <div>  email: deivczoff@gmail.com</div>
+               <div class="text2k"> Telefoní číslo: +420 777 287 760</div>
+               <div class="text2k">  Email: deivczoff@gmail.com</div>
             </div>
+        </div>
+            <div class="kf3">
+                <div class="text"> Napište mi dotaz </div>
+                <form id="frm-id" class="frm-class" method="POST" action="https://formspree.io/f/mvodkjqr">
+        
+                    <div class="fg">
+                        <label for="Name" class="form-label" aria-placeholder="Vaše jméno"></label>
+                        <div class="fi">
+                            <input type="text" id="Name" name="Name" class="form-class" required>
+                        </div>
+                    </div>
+                    <div class="fg">
+                        <label for="Email" class="form-label" aria-placeholder="Email"></label>
+                        <div class="fi">
+                            <input type="email" id="Email" name="Email" class="form-class" required>
+                        </div>
+                    </div>
+                    <div class="fg">
+                        <label for="Message" class="form-label" aria-placeholder="Vaše zpráva"></label>
+                        <div class="fi">
+                            <textarea id="Message" name="Message" class="form-class" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+                    <div class="fg">
+                        <button type="submit" id="form-button" class="form-button">Odeslat zprávu</button>
+                    </div>
+                </form>
+            </div>
+           
+        </div>  
         </div>
         </main>
 
@@ -148,70 +225,38 @@
     <footer>
 
     </footer>
-
-
-
-
-
-
-<script>
-        function o(obj) { 
-            obj.style.color = "red";
-        }
-        function ou(obj){
-obj.style.color = "white";
-        }
-        function z(obj){
-            obj.style.color = "red";
-        }
-        function zu(obj){
-obj.style.color = "white";
-        }
-        function k(obj){
-             obj.style.color = "red";
+    <script>
+        function x(){
+                if(document.getElementById("zivotopis").style.height == "500px" || document.getElementById("kontakty").style.height == "500px")
+                    { document.getElementById("zivotopis").style.height = "0";
+                    document.getElementById("kontakty").style.height = "0";
+                    setTimeout(xt, 500);
+                    }
+                else{document.getElementById("object").style.height = "500px";}
             }
-        function ku(obj){
-obj.style.color = "white";
-        }
-    function x(){
-            if(document.getElementById("zivotopis").style.height == "500px" || document.getElementById("kontakty").style.height == "500px")
-                { document.getElementById("zivotopis").style.height = "0";
-                document.getElementById("kontakty").style.height = "0";
-                setTimeout(xt, 500);
-                
-                }
-            else{document.getElementById("object").style.height = "500px";}
-
-
-
-
-        }
-        function xx(){document.getElementById("object").style.height = "0px"; }
-        function xt(){document.getElementById("object").style.height = "500px";}
-        function u(){
-            if(document.getElementById("object").style.height == "500px" || document.getElementById("kontakty").style.height == "500px"){
-                document.getElementById("object").style.height = "0";
-                document.getElementById("kontakty").style.height = "0";
-                setTimeout(ut, 500);
-                }
-            else{document.getElementById("zivotopis").style.height = "500px";}
-        }
-        function uu(){document.getElementById("zivotopis").style.height = "0px";}
-        function ut(){document.getElementById("zivotopis").style.height = "500px";}
-
-        function y(){
-            if(document.getElementById("zivotopis").style.height == "500px" || document.getElementById("object").style.height == "500px")
-                { document.getElementById("zivotopis").style.height = "0";
-                document.getElementById("object").style.height = "0";
-                setTimeout(yt, 500);
-                }
-            else{document.getElementById("kontakty").style.height = "500px";}
-
-
-
+            function xx(){document.getElementById("object").style.height = "0px"; }
+            function xt(){document.getElementById("object").style.height = "500px";}
+            function u(){
+                if(document.getElementById("object").style.height == "500px" || document.getElementById("kontakty").style.height == "500px"){
+                    document.getElementById("object").style.height = "0";
+                    document.getElementById("kontakty").style.height = "0";
+                    setTimeout(ut, 500);
+                    }
+                else{document.getElementById("zivotopis").style.height = "500px";}
             }
-        function yy(){document.getElementById("kontakty").style.height = "0";}
-        function yt(){document.getElementById("kontakty").style.height = "500px";}
-        
-</script>
+            function uu(){document.getElementById("zivotopis").style.height = "0px";}
+            function ut(){document.getElementById("zivotopis").style.height = "500px";}
+    
+            function y(){
+                if(document.getElementById("zivotopis").style.height == "500px" || document.getElementById("object").style.height == "500px")
+                    { document.getElementById("zivotopis").style.height = "0";
+                    document.getElementById("object").style.height = "0";
+                    setTimeout(yt, 500);
+                    }
+                else{document.getElementById("kontakty").style.height = "500px";}
+                }
+            function yy(){document.getElementById("kontakty").style.height = "0";}
+            function yt(){document.getElementById("kontakty").style.height = "500px";}
+            
+    </script>
 </body></html>
